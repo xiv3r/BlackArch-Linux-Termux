@@ -1,8 +1,11 @@
 # <h1 align="center">BlackArch-Termux</h1>
 
-<p align="center"> Installing BlackArch Linux on the top of ArchLinux Termux</p>
+<p align="center"> BlackArch Linux is a security-focused Arch Linux-based distribution that provides a comprehensive set of tools for penetration testing, digital forensics, and security auditing. The operating system has a large collection of pen-testing tools, including exploit development frameworks, sniffers and network analysis tools, reverse-engineering tools, cryptography tools, and forensics tools. BlackArch’s package manager allows users to easily add and update tools to the system. </p>
 
+<details><summary>: Requirements</summary>
 
+    => Termux
+</details>
 
 ## Installation:
 
@@ -21,7 +24,7 @@
 
 BlackArch Linux is compatible with existing/normal Arch installations. It acts as an unofficial user repository. Below you will find instructions on how to install BlackArch in this manner.
 
-#### Run https://blackarch.org/strap.sh as root and follow the instructions.
+#### Run [./strap.sh](https://blackarch.org/strap.sh) as root and follow the instructions.
    
     wget -O https://blackarch.org/strap.sh
 
@@ -37,6 +40,24 @@ BlackArch Linux is compatible with existing/normal Arch installations. It acts a
 
     ./strap.sh
 
-#### Enable multilib following https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib and run:
+#### Enable [multilib](https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib) and run:
 
-    sudo pacman -Syu
+    pacman -Syu
+
+## Install Tools From The Blackarch Repository
+
+#### To list all of the available tools, run
+   
+    pacman -Sgg | grep blackarch | cut -d' ' -f2 | sort -u
+
+#### To install all of the tools, run
+
+    pacman -S blackarch
+    
+#### To install a category of tools, run
+    
+    pacman -S blackarch-<category>
+    
+#### To see the blackarch categories, run
+
+    pacman -Sg | grep blackarch
