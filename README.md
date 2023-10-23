@@ -2,9 +2,17 @@
 
 <p align="center"> BlackArch Linux is a security-focused Arch Linux-based distribution that provides a comprehensive set of tools for penetration testing, digital forensics, and security auditing. The operating system has a large collection of pen-testing tools, including exploit development frameworks, sniffers and network analysis tools, reverse-engineering tools, cryptography tools, and forensics tools. BlackArch’s package manager allows users to easily add and update tools to the system. </p>
 
-<details><summary>: Requirements</summary>
+<br>
 
-    => Termux
+<details><summary>Requirements:
+</summary>
+    
+ * `5-15GB storage`
+ * `aarch64`
+ * `arm64`
+ *  `armeabi-v7a`
+ * `armeabi-v8a`
+ * `Termux`
 </details>
 
 ## Installation:
@@ -43,6 +51,13 @@ BlackArch Linux is compatible with existing/normal Arch installations. It acts a
 #### Enable [multilib](https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib) and run:
 
     pacman -Syu
+    
+
+### Run:
+
+    proot-distro login archlinux
+
+
 
 ## Install Tools From The Blackarch Repository
 
