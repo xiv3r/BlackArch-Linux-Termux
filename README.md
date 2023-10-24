@@ -10,9 +10,9 @@
  * `5-15GB storage`
  * `aarch64`
  * `arm64`
- *  `armeabi-v7a`
+ * `armeabi-v7a`
  * `armeabi-v8a`
- * `Termux`
+ * [`Termux`](https://github.com/xiv3r/Kali-Linux-Termux/releases/download/Apps/Termux_v0.119.1.apk)
 </details>
 
 ## Installation:
