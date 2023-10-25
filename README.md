@@ -19,9 +19,11 @@
 
     apt update && apt full-upgrade -y
 
-    apt install proot-debian
+    apt install proot-distro wget -y
     
-    proot-debian install archlinux
+    proot-distro install archlinux
+
+    proot-distro login archlinux
 
     pacman -Syu
 
