@@ -36,7 +36,7 @@ BlackArch Linux is compatible with existing/normal Arch installations. It acts a
 
 #### Run [./strap.sh](https://blackarch.org/strap.sh) as root and follow the instructions.
    
-    wget -O https://blackarch.org/strap.sh
+    wget https://blackarch.org/strap.sh
 
 #### Verify the SHA1 sum
 
@@ -44,7 +44,7 @@ BlackArch Linux is compatible with existing/normal Arch installations. It acts a
 
 #### Set execute bit
 
-    chmod +x strap.sh
+    chmod 777 strap.sh
 
 #### Run strap.sh
 
