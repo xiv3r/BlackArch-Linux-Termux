@@ -1,4 +1,4 @@
-# <h1 align="center">BlackArch Linux on Termux</h1>
+# <h1 align="center">Termux BlackArch</h1>
 
 <p align="center"> BlackArch Linux is a security-focused Arch Linux-based distribution that provides a comprehensive set of tools for penetration testing, digital forensics, and security auditing. The operating system has a large collection of pen-testing tools, including exploit development frameworks, sniffers and network analysis tools, reverse-engineering tools, cryptography tools, and forensics tools. BlackArch’s package manager allows users to easily add and update tools to the system. </p>
 
@@ -29,6 +29,10 @@
 
     pacman -Syyu
 
+## Execute balckarch in every startup
+   
+    echo "proot-distro login archlinux" >/$PREFIX/etc/bash.bashrc
+
 
 ## Installing on top of ArchLinux
 
@@ -53,11 +57,16 @@ BlackArch Linux is compatible with existing/normal Arch installations. It acts a
 #### Enable [multilib](https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib) and run:
 
     pacman -Syu
-    
+
 
 ### Run:
 
     proot-distro login archlinux
+
+
+## Installing selected tools
+
+    pacman -S (name of tool)
 
 
 
