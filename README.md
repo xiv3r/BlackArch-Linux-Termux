@@ -6,16 +6,17 @@
 
 <br>
 
-<details><summary>Requirements:
-</summary>
+<h1 align="center"><details><summary>Requirements:</summary>
     
  * `5-15GB storage`
  * `aarch64`
  * `arm64`
  * `armeabi-v7a`
  * `armeabi-v8a`
+ 
  * [`Termux`](https://github.com/xiv3r/Kali-Linux-Termux/releases/download/Apps/Termux_v0.119.1.apk)
-</details>
+
+</h1></details>
 
 ## Installation:
 
@@ -31,7 +32,7 @@
 
     pacman -Syyu
 
-## Execute balckarch in every startup
+## Execute balckarch in every termux startup
    
     echo "proot-distro login archlinux" >/$PREFIX/etc/bash.bashrc
 
