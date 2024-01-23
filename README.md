@@ -51,7 +51,7 @@ BlackArch Linux is compatible with existing/normal Arch installations. It acts a
 
 #### Set execute bit
 
-    chmod 777 strap.sh
+    chmod +x strap.sh
 
 #### Run strap.sh
 
