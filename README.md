@@ -20,7 +20,7 @@
 
 ## Automated Install:
 
-  curl https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/install.sh | sudo bash
+    curl https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/install.sh | sudo bash
 
 ## Manual Installation:
 
