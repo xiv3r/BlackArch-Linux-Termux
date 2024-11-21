@@ -1,4 +1,4 @@
-<img with="1000" height="500" src="https://github.com/xiv3r/BlackArch-Linux-Termux/blob/main/images.png">
+<img with="1000" height="500" src="https://github.com/xiv3r/BlackArch-Linux-Termux/blob/main/link/images.png">
 
 # <h1 align="center">Termux BlackArch</h1>
 
