@@ -16,7 +16,7 @@
 
 ## Auto Install:
 
-    wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/install.sh | sudo bash
+    wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/install.sh | sh
 
 ## Manual Installation:
 
