@@ -26,7 +26,11 @@ wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/refs/he
 ```sh
 proot-distro login archlinux
 ```
-
+## Add your own custom terminal username
+> replace the name `xiv3r` to your name
+```sh
+sed -i 's/user=kali/user=xiv3r/' /etc/bash.bashrc && source /etc/bash.bashrc
+```
 ## Install selected tools
 
     pacman -S (name of tool)
