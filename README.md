@@ -14,82 +14,36 @@
 
 </h3></details>
 
-## Auto Install:
+## Auto Install
+> include autologin on start-up
 ```sh
 wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/link/install.sh | sh
 ```
 ```sh
 wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/refs/heads/main/link/blackarch.sh | sh
 ```
-## Manual Installation:
+## Manual Login
+```sh
+proot-distro login archlinux
+```
 
-    apt update && apt full-upgrade -y
-
-    apt install proot-distro wget -y
-    
-    proot-distro install archlinux
-
-    proot-distro login archlinux
-
-    pacman -Syu
-
-    pacman -Syyu
-
-## Execute balckarch in every termux startup
-   
-    echo "proot-distro login archlinux" >/$PREFIX/etc/bash.bashrc
-
-
-## Installing on top of ArchLinux
-
-BlackArch Linux is compatible with existing/normal Arch installations. It acts as an unofficial user repository. Below you will find instructions on how to install BlackArch in this manner.
-
-#### Run [./strap.sh](https://blackarch.org/strap.sh) as root and follow the instructions.
-   
-    wget https://blackarch.org/strap.sh
-
-#### Verify the SHA1 sum
-
-    echo 5ea40d49ecd14c2e024deecf90605426db97ea0c strap.sh | sha1sum -c
-
-#### Set execute bit
-
-    chmod +x strap.sh
-
-#### Run strap.sh
-
-    ./strap.sh
-
-#### Enable [multilib](https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib) and run:
-
-    pacman -Syu
-
-
-### Run:
-
-    proot-distro login archlinux
-
-
-## Installing selected tools
+## Install selected tools
 
     pacman -S (name of tool)
 
 
-
-## Install Tools From The Blackarch Repository
-
-#### To list all of the available tools, run
+## list all of the available tools
    
     pacman -Sgg | grep blackarch | cut -d' ' -f2 | sort -u
 
-#### To install all of the tools, run
+## Install all of the tools
 
     pacman -S blackarch
     
-#### To install a category of tools, run
+#### Install a category of tools
     
     pacman -S blackarch-<category>
     
-#### To see the blackarch categories, run
+#### See the blackarch categories
 
     pacman -Sg | grep blackarch
