@@ -12,27 +12,28 @@
 <h3 align="center"><details><summary>Requirements:</summary>
     
 `5-15GB storage`
+`arm64`
 
 [`Termux`](https://github.com/xiv3r/Kali-Linux-Termux/releases/download/Apps/Termux_v0.119.1.apk)
 
 </h3></details>
 
 ## Auto Install
-> include autologin on start-up
+> include autologin in every start-up
 ```sh
-termux-setup-storage && apt update && apt upgrade -y && pkg install wget -y && echo "clear && proot-distro login archlinux" >> $PREFIX/etc/bash.bashrc && wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/link/install.sh | sh
+termux-setup-storage && apt update && apt upgrade -y && pkg install proot-distro wget -y && echo "clear && proot-distro login archlinux" >> $PREFIX/etc/bash.bashrc && wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/link/install.sh | sh
 ```
 ```sh
 wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/refs/heads/main/link/blackarch.sh | sh
 ```
 ## Manual Login
 ```sh
-proot-distro login archlinux
+pd sh archlinux
 ```
-## Add your own custom terminal username
-> replace the name `xiv3r` to your name
+## Add custom terminal name
+> - replace the name `xiv3r` to your name
 ```sh
-sed -i 's/user=kali/user=xiv3r/' /etc/bash.bashrc && source /etc/bash.bashrc
+sed -i 's/user=blackarch/user=xiv3r/' /etc/bash.bashrc && source /etc/bash.bashrc
 ```
 ## Install selected tools
 
