@@ -1,8 +1,5 @@
 #!/bin/bash
 
-apt update
-###
-apt full-upgrade -y
 ###
 apt install proot-distro wget -y
 ###
