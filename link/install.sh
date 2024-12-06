@@ -3,8 +3,6 @@
 ###
 apt install proot-distro wget -y
 ###
-echo "clear && proot-distro login archlinux" >> $PREFIX/etc/bash.bashrc
+echo "clear && pd sh archlinux" >> $PREFIX/etc/bash.bashrc
 ###
-proot-distro install archlinux
-###
-proot-distro login archlinux
+pd i archlinux
