@@ -19,16 +19,17 @@
 </h3></details>
 
 ## Auto Install
-> include autologin in every start-up
+> login:`blackarch`
+> uninstall:`pd rm archlinux `
 ```
-termux-setup-storage && apt update && apt upgrade -y && pkg install proot-distro wget -y && echo "clear && pd sh archlinux" >> $PREFIX/etc/bash.bashrc && wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/link/install.sh | sh && pd sh archlinux
+apt update && apt install proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/link/install.sh | sh && blackarch
 ```
 ```
-wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/refs/heads/main/link/blackarch.sh | sh
+pacman -Syu && pacman -S wget --noconfirm && wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/refs/heads/main/link/blackarch.sh | sh
 ```
 ## Manual Login
 ```sh
-pd sh archlinux
+blackarch
 ```
 ## Add custom terminal name
 > - replace the name `xiv3r` to your name
