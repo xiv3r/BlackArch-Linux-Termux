@@ -19,8 +19,8 @@
 </h3></details>
 
 ## Auto Install
-> login:`blackarch`
-> uninstall:`pd rm archlinux `
+> - login:`blackarch`
+> - uninstall:`pd rm archlinux `
 ```
 apt update && apt install proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/link/install.sh | sh && blackarch
 ```
