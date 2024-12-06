@@ -20,10 +20,10 @@
 
 ## Auto Install
 > include autologin in every start-up
-```sh
-termux-setup-storage && apt update && apt upgrade -y && pkg install proot-distro wget -y && echo "clear && proot-distro login archlinux" >> $PREFIX/etc/bash.bashrc && wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/link/install.sh | sh
 ```
-```sh
+termux-setup-storage && apt update && apt upgrade -y && pkg install proot-distro wget -y && echo "clear && pd sh archlinux" >> $PREFIX/etc/bash.bashrc && wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/link/install.sh | sh && pd sh archlinux
+```
+```
 wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/refs/heads/main/link/blackarch.sh | sh
 ```
 ## Manual Login
