@@ -24,9 +24,6 @@
 ```
 apt update && apt install axel bsdtar proot proot-distro wget -y && clear && wget -qO- https://raw.githubusercontent.com/xiv3r/Termux-Pentesting-Distro/refs/heads/main/BlackArch/install | sh && clear && blackarch
 ```
-```
-pacman -Syu && pacman -S wget --noconfirm && wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/refs/heads/main/link/blackarch.sh | sh
-```
 ## Manual Login
 ```sh
 blackarch
@@ -36,6 +33,10 @@ blackarch
 ```sh
 sed -i 's/user=blackarch/user=xiv3r/' /etc/bash.bashrc && source /etc/bash.bashrc
 ```
+# Update & Upgrade
+
+    pacman -Syyu
+    
 ## Install selected tools
 
     pacman -S (name of tool)
