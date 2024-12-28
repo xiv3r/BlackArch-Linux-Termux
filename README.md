@@ -20,9 +20,9 @@
 
 ## Auto Install
 > - login:`blackarch`
-> - uninstall:`pd rm archlinux `
+> - uninstall:`pd rm blackarch`
 ```
-apt update && apt install proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/main/link/install.sh | sh && blackarch
+apt update && apt install axel bsdtar proot proot-distro wget -y && clear && wget -qO- https://raw.githubusercontent.com/xiv3r/Termux-Pentesting-Distro/refs/heads/main/BlackArch/install | sh && clear && blackarch
 ```
 ```
 pacman -Syu && pacman -S wget --noconfirm && wget -qO- https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/refs/heads/main/link/blackarch.sh | sh
