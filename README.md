@@ -17,8 +17,8 @@
 
 </h3></details>
 
-# BlackArch
-- Auto Install
+# BlackArch Linux 
+> Auto Install
 ```diff
 -;apt update && apt install wget -y && clear && wget -qO- https://raw.githubusercontent.com/xiv3r/Termux-Pentesting-Distro/refs/heads/main/BlackArch/install | bash && clear && blackarch
 ```
