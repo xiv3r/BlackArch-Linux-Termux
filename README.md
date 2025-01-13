@@ -9,11 +9,11 @@
 <br>
 
 <h3 align="center"><details><summary>Requirements:</summary>
-    
-`5-15GB storage`
-`arm64`
-
-[`Termux`](https://github.com/xiv3r/Kali-Linux-Termux/releases/download/Apps/Termux_v0.119.1.apk)
+ <br>
+ 
+- `5-15GB storage`
+- `arm64`
+- [`Termux`](https://github.com/xiv3r/Kali-Linux-Termux/releases/download/Apps/Termux_v0.119.1.apk)
 
 </h3></details>
 
