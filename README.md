@@ -19,20 +19,20 @@
 
 # BlackArch
 - Auto Install
-```
-apt update && apt install wget -y && clear && wget -qO- https://raw.githubusercontent.com/xiv3r/Termux-Pentesting-Distro/refs/heads/main/BlackArch/install | bash && clear && blackarch
+```diff
+-;apt update && apt install wget -y && clear && wget -qO- https://raw.githubusercontent.com/xiv3r/Termux-Pentesting-Distro/refs/heads/main/BlackArch/install | bash && clear && blackarch
 ```
 ## Manual Login
-```sh
-blackarch
+```diff
+-;blackarch
 ```
 ## Uninstall
-```
-uninstall-blackarch
+```diff
+-;uninstall-blackarch
 ```
 ## More options
-```
-proot-distro --help
+```diff
+-;proot-distro --help
 ```
 
 # Update & Upgrade
