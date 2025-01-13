@@ -35,6 +35,7 @@
 -;proot-distro --help
 ```
 
+------------------
 # Update & Upgrade
 
     pacman -Syyu
