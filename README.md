@@ -1,7 +1,6 @@
 <p align="center"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fxiv3r%2FBlackArch-Linux-Termux&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=%F0%9F%91%81%EF%B8%8F+%F0%9F%91%81%EF%B8%8F&edge_flat=false">
 
-
-<img width="1000" height="800" src="https://github.com/xiv3r/BlackArch-Linux-Termux/blob/main/link/black-arch.png">
+<img width="800" height="500" src="https://github.com/xiv3r/Termux-Pentesting-Distro/blob/main/BlackArch/Blackarch.png">
 
 # <h1 align="center">BlackArch Termux</h1>
 
@@ -18,21 +17,24 @@
 
 </h3></details>
 
-## Auto Install
-> - login:`blackarch`
-> - uninstall:`pd rm blackarch`
+# BlackArch
+- Auto Install
 ```
-apt update && apt install axel bsdtar proot proot-distro wget -y && clear && wget -qO- https://raw.githubusercontent.com/xiv3r/Termux-Pentesting-Distro/refs/heads/main/BlackArch/install | sh && clear && blackarch
+apt update && apt install wget -y && clear && wget -qO- https://raw.githubusercontent.com/xiv3r/Termux-Pentesting-Distro/refs/heads/main/BlackArch/install | bash && clear && blackarch
 ```
 ## Manual Login
 ```sh
 blackarch
 ```
-## Add custom terminal name
-> - replace the name `xiv3r` to your name
-```sh
-sed -i 's/user=blackarch/user=xiv3r/' /etc/bash.bashrc && source /etc/bash.bashrc
+## Uninstall
 ```
+uninstall-blackarch
+```
+## More options
+```
+proot-distro --help
+```
+
 # Update & Upgrade
 
     pacman -Syyu
