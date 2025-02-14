@@ -36,7 +36,7 @@
 ```
 ## Reinstall
 ```
-pd reinstall blackarch
++; pd reinstall blackarch
 ```
 ## More options
 ```diff
