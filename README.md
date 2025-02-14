@@ -20,21 +20,28 @@
 # BlackArch Linux 
 > Auto Install
 ```diff
--;apt update && apt install wget -y && clear && wget -qO- https://raw.githubusercontent.com/xiv3r/Termux-Pentesting-Distro/refs/heads/main/BlackArch/install | bash && clear && blackarch
+-; apt update && apt install wget -y && https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/refs/heads/main/link/install.sh | bash && clear && blackarch
 ```
-## Manual Login
+## Login
 ```diff
--;blackarch
++; blackarch
+```
+## Logout 
+```
++; exit
 ```
 ## Uninstall
 ```diff
--;uninstall-blackarch
++; uninstall-blackarch
+```
+## Reinstall
+```
+pd reinstall blackarch
 ```
 ## More options
 ```diff
--;proot-distro --help
++; proot-distro --help
 ```
-
 ------------------
 # Update & Upgrade
 
@@ -53,10 +60,10 @@
 
     pacman -S blackarch
     
-#### Install a category of tools
+## Install a category of tools
     
     pacman -S blackarch-<category>
     
-#### See the blackarch categories
+## See the blackarch categories
 
     pacman -Sg | grep blackarch
