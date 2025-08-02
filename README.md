@@ -24,23 +24,23 @@
 ```
 ## Login
 ```diff
-+; blackarch
+blackarch
 ```
 ## Logout 
 ```
-+; exit
+exit
 ```
 ## Uninstall
 ```diff
-+; uninstall-blackarch
+uninstall-blackarch
 ```
 ## Reinstall
 ```
-+; pd reinstall blackarch
+pd reinstall blackarch
 ```
 ## More options
 ```diff
-+; proot-distro --help
+proot-distro --help
 ```
 ------------------
 # Update & Upgrade
