@@ -6,19 +6,10 @@ clear
 
 # Variables
 FS="blackarch"
-
-# Forward the value of FS to NM
-NM="$FS"
-
-# Capitalize the first letter of NM
-NM=$(echo "$NM" | awk '{print toupper(substr($0,1,1)) substr($0,2)}')
-
-# Display the values of FS and NM
-echo "$FS" > /dev/null
-echo "$NM" > /dev/null
+NM="Blackarch"
 
 # Display neofetch with custom ASCII art
-neofetch --ascii_distro "${NM}" -L
+neofetch --ascii_distro "${NM}"
 
 # Create necessary directories
 mkdir -p "$PREFIX/var/lib/proot-distro/installed-rootfs"
@@ -27,7 +18,7 @@ mkdir -p "$PREFIX/var/lib/proot-distro/installed-rootfs"
 cd "$PREFIX/var/lib/proot-distro/installed-rootfs/"
 
 # Download the rootfs using axel
-axel -a -o "${FS}.tar.xz" "https://github.com/xiv3r/Termux-Pentesting-Distro/releases/download/rootfs/${FS}.tar.xz"
+axel -o "${FS}.tar.xz" "https://github.com/xiv3r/Termux-Pentesting-Distro/releases/download/rootfs/${FS}.tar.xz"
 
 # Extract the rootfs
 echo " "
@@ -44,20 +35,24 @@ EOF
 # Create a shortcut command to launch the distro
 cat > "$PREFIX/bin/${FS}" << EOF
 #!/data/data/com.termux/files/usr/bin/bash
+
 proot-distro login ${FS}
 EOF
 chmod 700 "$PREFIX/bin/${FS}"
 
 # Add start-up login notification
 cat >> $PREFIX/etc/bash.bashrc << EOF
+termux-wake-lock 
 ${FS}
 EOF
 
 # Add support for uninstallation
 cat > $PREFIX/bin/uninstall-${FS} << EOF
 #!/data/data/com.termux/files/usr/bin/bash
+
 proot-distro remove ${FS}
 sed -i 's/echo "Login ${NM} Linux: ${FS}"//g' $PREFIX/etc/bash.bashrc
+sed -i 's/termux-wake-lock//g' $PREFIX/etc/bash.bashrc
 rm -rf $PREFIX/bin/uninstall-${FS}
 rm -rf $PREFIX/bin/${FS}
 rm -rf $PREFIX/var/lib/proot-distro/dlcache/${FS}.tar.xz
@@ -66,7 +61,7 @@ chmod 700 "$PREFIX/bin/uninstall-${FS}"
 
 # Move tarball to cache
 mkdir -p "$PREFIX/var/lib/proot-distro/dlcache"
-mv "${FS}.tar.xz" "$PREFIX/var/lib/proot-distro/dlcache"
+mv -f "${FS}.tar.xz" "$PREFIX/var/lib/proot-distro/dlcache"
 
 # Display final instructions
 echo -e '\e[1;93m'
