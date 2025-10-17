@@ -6,18 +6,18 @@
 <br>
 
 # Requirements
-- `5-15GB storage`
-- `arm64`
+- `10GB Storage`
+- `Arm64`
 - [`Termux`](https://github.com/xiv3r/Kali-Linux-Termux/releases/download/Apps/Termux_v0.119.1.apk)
 
 </h3></details>
 
 # Auto Install
 ```diff
--; apt update && apt install wget -y && https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/refs/heads/main/link/install.sh | bash && clear && blackarch
+-; apt update && pkg install wget -y && https://raw.githubusercontent.com/xiv3r/BlackArch-Linux-Termux/refs/heads/main/link/install.sh | bash && clear && blackarch
 ```
 ## Login
-```diff
+```
 blackarch
 ```
 ## Logout 
@@ -25,7 +25,7 @@ blackarch
 exit
 ```
 ## Uninstall
-```diff
+```
 uninstall-blackarch
 ```
 ## Reinstall
@@ -33,31 +33,31 @@ uninstall-blackarch
 pd reinstall blackarch
 ```
 ## More options
-```diff
+```
 proot-distro --help
 ```
 ------------------
 # Update & Upgrade
-
-    pacman -Syyu
-    
+```
+pacman -Syyu
+```   
 ## Install selected tools
-
-    pacman -S (name of tool)
-
-
+```
+pacman -S (name of tool)
+```
 ## list all of the available tools
-   
-    pacman -Sgg | grep blackarch | cut -d' ' -f2 | sort -u
-
+```
+pacman -Sgg | grep blackarch | cut -d' ' -f2 | sort -u
+```
 ## Install all of the tools
-
-    pacman -S blackarch
-    
+```
+pacman -S blackarch
+```   
 ## Install a category of tools
-    
-    pacman -S blackarch-<category>
-    
+```
+pacman -S blackarch-<category>
+```   
 ## See the blackarch categories
-
-    pacman -Sg | grep blackarch
+```
+pacman -Sg | grep blackarch
+```
