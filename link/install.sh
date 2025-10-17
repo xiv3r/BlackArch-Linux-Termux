@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash -e
+#!/data/data/com.termux/files/usr/bin/bash
 
 # Install required packages
 apt install proot proot-distro bsdtar axel neofetch -y
@@ -42,7 +42,7 @@ chmod 700 "$PREFIX/bin/$FS"
 
 # Add start-up login notification
 sed -i '/termux-wake-lock/d' $PREFIX/etc/bash.bashrc
-sed -i 's/$FS/' $PREFIX/etc/bash.bashrc
+sed -i '/$FS/d' $PREFIX/etc/bash.bashrc
 cat >> $PREFIX/etc/bash.bashrc << EOF
 termux-wake-lock 
 $FS
