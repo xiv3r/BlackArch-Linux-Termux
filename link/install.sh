@@ -18,7 +18,7 @@ mkdir -p "$PREFIX/var/lib/proot-distro/installed-rootfs"
 cd "$PREFIX/var/lib/proot-distro/installed-rootfs/"
 
 # Download the rootfs using axel
-axel -o "$FS.tar.xz" "https://github.com/xiv3r/Termux-Pentesting-Distro/releases/download/rootfs/$FS.tar.xz"
+axel -o "$FS.tar.xz" "https://github.com/xiv3r/BlackArch-Linux-Termux/releases/download/blackarch/blackarch.tar.xz"
 
 # Extract the rootfs
 echo " "
