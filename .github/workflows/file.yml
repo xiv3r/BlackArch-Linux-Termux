@@ -19,7 +19,7 @@ jobs:
       run: |
         mkdir -p downloads
         cd downloads
-        wget -O https://github.com/xiv3r/Termux-Pentesting-Distro/releases/download/rootfs/blackarch.tar.xz
+        wget https://github.com/xiv3r/Termux-Pentesting-Distro/releases/download/rootfs/blackarch.tar.xz
                            
     - name: Determine release tag
       id: get_tag
