@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 # Install required packages
-apt install proot proot-distro bsdtar axel neofetch -y
+pkg install proot proot-distro bsdtar axel neofetch -y
 clear
 
 # Variables
